@@ -28,10 +28,10 @@ body {
 /* || typography */
 
 h1, h2, h3 {
- font[size="7"], font[size="6"], font[size="5"] {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
-}}
+  text-align: center;
+}
 
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -200,14 +200,23 @@ audio {
 
 .show-hide {
   cursor: pointer;
+  cursor: pointer;
+  text-align: center;
+  width: 150px;
+}
+
+.show-hide:focus,
+.show-hide:hover {
+  background-color: #333;
+  color: #ffffff;
 }
 
 .comments font[size="6"] {
   font-size: 2rem;
 }
 
-.comments font[size="6"]:nth-of-type(2) {
-  margin-bottom: 0;
+.comment-form {
+  margin-bottom: 3rem;
 }
 
 .comment-form {
@@ -233,6 +242,7 @@ audio {
 .show-hide {
   text-align: center;
   width: 150px;
+  cursor: pointer;
 }
 
 .comment-form input, .comment-form label, .show-hide {
@@ -250,6 +260,10 @@ audio {
   width: 30%;
   display: block;
   margin: 0 auto;
+  background: #333;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .comment-container {
